@@ -1,0 +1,40 @@
+// 1. Define an array as a global and write a for loop to put 10 random integers between 1 and 100 into it. 
+var a = []; 
+for (var i = 0; i<10;++i)
+{
+    a.push(round(random(1,100)));
+}
+//println(a); //debugging println
+
+
+// 2. println the first element of your array.
+println(a[0]);
+
+
+// 3. println the element at index 5 of your array.
+println(a[5]);
+
+
+// 4. println the last element of your array (Hint: Indexing starts at 0).
+println(a[9]);
+
+
+// 5. println and the length of your array (but don't just print out 10, use the array length property).
+println(a.length);
+
+
+// 6. Replace the element at index 5 of your array with the number 200.
+a.splice(5,1,200);
+
+
+// 7. Add 300 as the 11th element to the end of your array.
+a.push(300);
+
+
+// 8. Use a for loop to print all elements of your array.
+println("for loop starting:");
+for (var i=0;i<a.length;++i)
+{
+    println(a[i]);
+}
+
